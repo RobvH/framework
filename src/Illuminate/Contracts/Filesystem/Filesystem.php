@@ -172,4 +172,20 @@ interface Filesystem
      * @return bool
      */
     public function deleteDirectory($directory);
+    
+    /**
+     * Determine if the given path is a directory.
+     *
+     * @param  string  $directory
+     * @return bool
+     */
+    public function isDirectory($directory);
+    
+    /**
+     * Determine if the given path is a file.
+     *
+     * @param  string  $file
+     * @return bool
+     */
+    public function isFile($file);
 }
